@@ -7,6 +7,7 @@
     --Verylightgray: rgb(242, 242, 242);
 
     /* Adicion de Colores */
+    --Blanco: rgb(255, 255, 255);
 
     /* Font Size */
     --FontSize: 15px;
@@ -102,8 +103,14 @@ body {
         font-weight: 400;
         padding: 1em 2.5em;
         border-radius: 2em;
-        background-color: white;
+        background-color: var(--Blanco);
         margin-bottom: 2em;
+    }
+
+    .Botones:hover{
+        background-color: transparent;
+        border: 2px solid var(--Blanco);
+        color: var(--Blanco);
     }
 
 /* Autores */
