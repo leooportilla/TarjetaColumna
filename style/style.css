@@ -1,0 +1,175 @@
+:root {
+    /* Color */
+    --BrightOrange: rgb(227, 136, 38);
+    --DarkCyan: rgb(0, 105, 112);
+    --Verydarkcyan: rgb(0, 66, 65);
+    --Transparentwhite: rgba(255, 255, 255, 0.75);
+    --Verylightgray: rgb(242, 242, 242);
+
+    /* Adicion de Colores */
+    --Blanco: rgb(255, 255, 255);
+
+    /* Font Size */
+    --FontSize: 15px;
+
+    /* Tipografia */
+    --TipografiaBig: 'Big Shoulders Display', cursive;
+    --TipografiaLexend: 'Lexend Deca', sans-serif;
+}
+
+/* Normalizar elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de Tarjeta */
+body {
+    font-size: var(--FontSize);
+    display: grid;
+    place-content: center;
+    margin-top: 5em;
+}
+
+/* Tarjeta */
+.Tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 22em;
+}
+
+    /* Sedans */
+    .Sedans {
+        background-color: var(--BrightOrange);
+        border-radius: 0.5em 0.5em 0 0;
+        padding: 3em;
+        padding-bottom: 4.5em;
+    }
+        .Boton1 {
+            color: var(--BrightOrange);
+        }
+
+    /* Suvs */
+    .Suvs {
+        background-color: var(--DarkCyan);
+        padding: 3em;
+        padding-bottom: 4.5em;
+    }
+        .Boton2 {
+            color: var(--DarkCyan);
+        }
+
+    /* Luxury */
+    .Luxury {
+        background-color: var(--Verydarkcyan);
+        border-radius: 0 0 0.5em 0.5em;
+        padding: 3em;
+        padding-bottom: 4.5em;
+    }
+        .Boton3 {
+            color: var(--Verydarkcyan);
+        }
+
+    /* Icono */
+    .Icono {
+        width: 4em;
+    }
+
+    /* Titulos */
+    .Titulo {
+        text-transform: uppercase;
+        font-family: var(--TipografiaBig);
+        font-size: 2.5em;
+        font-weight: 700;
+        color: var(--Verylightgray);
+        margin: 1em 0;
+    }
+
+    /* Parrafos */
+    .Parrafo {
+        font-family: var(--TipografiaLexend);
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--Transparentwhite);
+        line-height: 2;
+        margin-bottom: 2.5em;
+    }
+
+    /* Botones */
+    .Botones {
+        text-decoration: none;
+        font-family: var(--TipografiaLexend);
+        font-weight: 400;
+        padding: 1em 2.5em;
+        border-radius: 2em;
+        background-color: var(--Blanco);
+        margin-bottom: 2em;
+    }
+
+    .Botones:hover{
+        background-color: transparent;
+        border: 2px solid var(--Blanco);
+        color: var(--Blanco);
+    }
+
+/* Autores */
+.Atributos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    font-family: var(--TipografiaLexend);
+    color: black;
+}
+
+.Nombre {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: black;
+    font-family: var(--TipografiaLexend);
+}
+
+.Enlace{
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+@media (min-width: 376px) {
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    /* Tarjeta */
+    .Tarjeta {
+        flex-direction: row;
+        width: 65em;
+    }
+
+        /* Sedans */
+        .Sedans {
+            border-radius: 0.5em 0 0 0.5em;
+        }
+
+        /* Luxury */
+        .Luxury {
+            border-radius: 0 0.5em 0.5em 0;
+        }
+
+
+    /* Icono */
+    .Icono {
+        width: 4.5em;
+    }
+
+    /* Titulos */
+    .Titulo {
+        font-size: 2.5em;
+    }
+
+    /* Parrafos */
+    .Parrafo {
+        margin-bottom: 7em;
+    }
+}
